@@ -1,0 +1,83 @@
+/* border-box include padding e border nella width e in height */
+* {
+    box-sizing: border-box;
+    margin: 20px;
+    padding: 0;
+
+}
+
+header{
+    background-color: rgba(229,121,230,255);
+    height:fit-content;
+    /* margin-bottom: 15px; */
+}
+nav li{
+    list-style-type: none;
+    display: inline;
+}
+nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+/* div contenitore giallo altezza fissa */
+main .containeryellow{
+    background-color: rgba(225,214,122,255);
+    height: 400px;
+    /* height: fit-content; */
+}
+
+/* sezione contenitore blu altezza fissa*/
+main .containerblue{
+    background-color:rgb(6,132,247);
+    height: 500px;
+    /* height: fit-content ; */
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* riga all'interno della sezione che rimane fissa sopra le colonne */
+.riga{
+    background-color: rgba(171,207,231,255);
+    height: 50px;
+    /* height: fit-content; */
+}
+
+
+ /* colonne valori comuni a tutte e tre altezza fissa  */
+ /* float */
+.column {
+    float: left;
+    padding: 10px;
+    /* height: fit-content; */
+    height: 425px; 
+    background-color: rgba(171,207,231,255);
+    margin-top: 15px;
+}
+
+  /* percentuale larghezza colonne laterali */
+.left, .right {
+    width: 20%;
+    
+}
+
+  /*percentuale larghezza colonna centrale (proporzionato a laterali) */
+.middle {
+    width: 58%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+  
+ /* clear  */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* footer con altezza fissa */
+footer{
+    background-color: rgba(136,1,254,255);
+    height: 80px;
+    /* height: fit-content; */
+    margin-top: 15px;
+}
