@@ -86,6 +86,10 @@ nav a{
     height: fit-content;
     margin-top: 5%;
 }
+p{
+    color: gray;
+    font-size: medium;
+}
 
  /* colonne valori comuni a tutte e tre altezza fissa  */
  /* float */
@@ -137,7 +141,6 @@ nav a{
     margin-right: 0;
     padding-top: 10px;
     text-align: left;
-    color: gray;
 }
 
 /* footer */
