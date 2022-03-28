@@ -1,24 +1,49 @@
 /* border-box include padding e border nella width e in height */
 * {
     box-sizing: border-box;
-    margin: 20px;
+    margin: 10px 30px;
     padding: 0;
-
+    font-family: 'Montserrat', sans-serif;
 }
 
+/* header con logo e nav */
 header{
-    background-color: rgba(229,121,230,255);
-    height:fit-content;
-    /* margin-bottom: 15px; */
+    /* background-color: rgba(229,121,230,255); */
+    height: fit-content;
+    padding-bottom: 5px;
 }
+
+#logo{
+    height: 80%;
+    width: 90%;
+    object-fit: contain;
+    border-right: 1px solid lightgray;
+    /* background-color: greenyellow; */
+}
+.logo {
+    height:100px;
+    width: 300px;
+    margin-bottom: 20px;
+    /* background-color: blue; */
+}
+
+/* barra di navigazione */
+
 nav li{
     list-style-type: none;
     display: inline;
+    /* padding: 5px; */
+    background-color:aqua;
 }
 nav a{
     text-transform: uppercase;
     text-decoration: none;
+    color: gray;
+    font-size:large;
+    
 }
+
+
 /* div contenitore giallo altezza fissa */
 main .containeryellow{
     background-color: rgba(225,214,122,255);
@@ -49,7 +74,7 @@ main .containerblue{
     float: left;
     padding: 10px;
     /* height: fit-content; */
-    height: 425px; 
+    height: 425px;
     background-color: rgba(171,207,231,255);
     margin-top: 15px;
 }
@@ -57,7 +82,7 @@ main .containerblue{
   /* percentuale larghezza colonne laterali */
 .left, .right {
     width: 20%;
-    
+
 }
 
   /*percentuale larghezza colonna centrale (proporzionato a laterali) */
@@ -66,7 +91,7 @@ main .containerblue{
     margin-left: 1%;
     margin-right: 1%;
 }
-  
+
  /* clear  */
 .row::after {
     content: "";
