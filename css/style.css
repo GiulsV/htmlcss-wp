@@ -71,7 +71,9 @@ nav a{
     left: 2%;
     color: white;
 }
-
+p.texthero{
+    font-size:large;
+}
 
 /* sezione contenitore blu altezza fissa*/
 .container{
@@ -86,7 +88,7 @@ nav a{
     height: fit-content;
     margin-top: 5%;
 }
-p{
+p .textgrey{
     color: gray;
     font-size: medium;
 }
@@ -100,13 +102,13 @@ p{
     width: fit-content;
 }
 
-/* percentuale larghezza colonne laterali */
+/* colonne laterali */
 .left, .right {
     width: 23%;
 
 }
 
-/*percentuale larghezza colonna centrale (proporzionato a laterali) */
+/* colonna centrale */
 .middle {
     width: 48%;
 }
