@@ -1,14 +1,14 @@
 /* border-box include padding e border nella width e in height */
 * {
     box-sizing: border-box;
-    margin: 10px 30px;
+    margin: 10px 50px;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    /* background-color: cadetblue; */
 }
 
 /* header con logo e nav */
 header{
-    /* background-color: rgba(229,121,230,255); */
     height: fit-content;
     padding-bottom: 5px;
 }
@@ -17,39 +17,63 @@ header{
     height: 80%;
     width: 90%;
     object-fit: contain;
-    border-right: 1px solid lightgray;
-    /* background-color: greenyellow; */
+    border-right: 1px solid lightgray
 }
 .logo {
     height:100px;
     width: 300px;
     margin-bottom: 20px;
-    /* background-color: blue; */
 }
 
 /* barra di navigazione */
+.navbar{
+    width: auto;
+    margin-left: 5%;
+}
 
 nav li{
     list-style-type: none;
-    display: inline;
-    /* padding: 5px; */
-    background-color:aqua;
+    display: inline-block;
+    margin:0 5px;
 }
 nav a{
     text-transform: uppercase;
     text-decoration: none;
     color: gray;
-    font-size:large;
-    
+    font-size:medium;
+    width: fit-content;
+    margin: 0 5px;
 }
 
+/* div hero immagine con testo */
 
-/* div contenitore giallo altezza fissa */
-main .containeryellow{
-    background-color: rgba(225,214,122,255);
-    height: 400px;
-    /* height: fit-content; */
+.hero-image {
+    height: 500px;
+    width: auto;
+    position: relative;
+    /* background-color: blue; */
+
 }
+#banner{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: brightness(0.7);
+}
+.hero-text {
+    width: auto;
+    height:fit-content;
+    text-align: left;
+    position: absolute;
+    top: 80%;
+    bottom: 10%;
+    left: 27%;
+    /* background-color: cornflowerblue; */
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
 
 /* sezione contenitore blu altezza fissa*/
 main .containerblue{
